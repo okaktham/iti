@@ -1,129 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="#main">Main</a>
-                <a href="#order">Make an order</a>
-                <a href="#contact">Contact Us</a>
-            </nav>
-        </header>
-        <main id="main">
-            <h1>Black Goose Bistro | Pizza-on-Demand</h1>
-            <form>
-                <table>
-                    <tr>
-                        <td>
-                            <label for="name">Name:</label>
-                        </td>
-                        <td></td>
-                        <td>
-                            <input type="text" id="name" name="name">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="address">Address:</label>
-                        </td>
-                        <td></td>
-                        <td>
-                            <input type="text" id="address" name="address">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="tel">Telephone Number:</label>
-                        </td>
-                        <td></td>
-                        <td>
-                            <input type="tel" name="tel" id="tel">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="email">Email:</label>
-                        </td>
-                        <td></td>
-                        <td>
-                            <input type="email" name="email" id="email">
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <label for="delivery">Delivery instructions:</label>
-                <br>
-                <textarea
-                    maxlength="400"
-                    name="delivery"
-                    placeholder="Max length is 400 characters"
-                    cols="40"
-                    rows="4"
-                ></textarea>
-                <h1>Design your dream Pizza:</h1>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#main">Main</a>
+            <a href="#order">Make an order</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    <main id="main">
+        <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+
+                    <td></td>
+
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>
+                    </td>
+
+                    <td></td>
+
+                    <td>
+                        <input type="text" id="address" name="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tel">Telephone Number:</label>
+                    </td>
+
+                    <td></td>
+
+                    <td>
+                        <input type="tel" name="tel" id="tel">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+
+                    <td></td>
+
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+            </table><br>
+
+            <label for="delivery">Delivery instructions:</label> <br>
+            <textarea maxlength="400" name="delivery" placeholder="Max length is 400 characters" cols="40" rows="4"></textarea>
+
+            <h1>Design your dream Pizza:</h1>
+
+            <fieldset>
+                <legend>Pizza specs</legend> <br>
                 <fieldset>
-                    <legend>Pizza specs</legend>
-                    <br>
-                    <fieldset>
-                        <legend>Crust (choose one)</legend>
-                        <br>
-                        <label>
-                            <input type="radio" name="crust" value="classic-white"> Classic white
-                        </label>
-                        <br>
-                        <label>
-                            <input type="radio" name="crust" value="multigrain"> Multigrain
-                        </label>
-                        <br>
-                        <label>
-                            <input type="radio" name="crust" value="stuffed-crust"> Stuffed Crust
-                        </label>
-                        <br>
-                        <label>
-                            <input type="radio" name="crust" value="gluten-free"> Gluten Free
-                        </label>
-                        <br>
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend>Toppings (Choose as many as you want)</legend>
-                        <br>
-                        <input type="checkbox" value="Red sauce" name="topping">
-                        Red sauce
-                        <br>
-                        <input type="checkbox" value="White sauce" name="topping">
-                        White
-            sauce
-                        <br>
-                        <input type="checkbox" value="Mozzarella cheese" name="topping">
-                        Mozzarella cheese
-                        <br>
-                        <input type="checkbox" value="Mushrooms" name="topping">
-                        Mushrooms
-                        <br>
-                        <input type="checkbox" value="Peppers" name="topping">
-                        Peppers
-                        <br>
-                        <input type="checkbox" value="Anchovies" name="topping">
-                        Anchovies
-                        <br>
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend>Number</legend>
-                        <br>
-                        <label for="pizzas">No. Pizzas:</label>
-                        <input id="pizzas" name="pizzas" type="number">
-                    </fieldset>
+                    <legend>Crust (choose one)</legend> <br>
+
+                    <label>
+                        <input type="radio" name="crust" value="classic-white">
+                        Classic white
+                    </label> <br>
+
+                    <label>
+                        <input type="radio" name="crust" value="multigrain">
+                        Multigrain
+                    </label> <br>
+
+                    <label>
+                        <input type="radio" name="crust" value="stuffed-crust">
+                        Stuffed Crust
+                    </label> <br>
+
+                    <label>
+                        <input type="radio" name="crust" value="gluten-free">
+                        Gluten Free
+                    </label> <br>
+                </fieldset> <br>
+
+                <fieldset>
+                    <legend>Toppings (Choose as many as you want)</legend> <br>
+
+                    <input type="checkbox" value="Red sauce" name="topping"> Red sauce <br>
+                    <input type="checkbox" value="White sauce" name="topping"> White sauec <br>
+                    <input type="checkbox" value="Mozzarella cheese" name="topping"> Mozzarella cheese <br>
+                    <input type="checkbox" value="Mushrooms" name="topping"> Mushrooms <br>
+                    <input type="checkbox" value="Peppers" name="topping"> Peppers <br>
+                    <input type="checkbox" value="Anchovies" name="topping"> Anchovies <br>
+
+                </fieldset> <br>
+                <fieldset>
+                    <legend>Number</legend> <br>
+
+                    <label for="pizzas">No. Pizzas:</label>
+                    <input id="pizzas" name="pizzas" type="number">
+
                 </fieldset>
-                <br>
-                <input type="submit" value="submit order" name="submit">
-                <input type="reset" value="reset" name="reset">
-            </form>
-        </main>
-    </body>
+            </fieldset> <br>
+
+            <input type="submit" value="submit order" name="submit">
+            <input type="reset" value="reset" name="reset">
+        </form>
+    </main>
+</body>
+
 </html>
