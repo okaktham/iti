@@ -1,21 +1,23 @@
 :root {
-  --bg-primary: #555879;   /* navbar, headers */
-  --bg-secondary: #98A1BC; /* subtle highlights */
-  --bg-tertiary: #DED3C4;  /* panels, forms */
-  --bg-light: #F4EBD3;     /* page background */
+  --bg-primary: #555879;
+  --bg-secondary: #98A1BC;
+  --bg-tertiary: #DED3C4;
+  --bg-light: #F4EBD3;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background: var(--bg-light);
   color: var(--bg-primary);
   font-size: 18px;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 40px; /* space around content */
+  padding: 40px;
   display: flex;
   justify-content: center;
 }
@@ -53,6 +55,7 @@ header {
 
 h1, h2 {
   color: var(--bg-primary);
+  margin-bottom: 15px;
 }
 
 main {
@@ -71,7 +74,7 @@ form {
   border-radius: 5px;
   padding: 20px;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
   text-align: left;
 }
 
@@ -87,4 +90,25 @@ form textarea {
 
 #notes {
   height: 100px;
+}
+
+.image-section {
+  margin: 40px auto;
+}
+
+.image-section img {
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid var(--bg-primary);
+}
+
+.back {
+  background-image: url('../../cat.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 400px;
+  border: 3px solid var(--bg-primary);
+  border-radius: 10px;
+  margin-top: 40px;
 }
