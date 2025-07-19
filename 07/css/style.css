@@ -26,6 +26,22 @@ nav {
   background: transparent;
 }
 
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#nav-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
 nav img {
   height: 50px;
 }
@@ -124,13 +140,13 @@ nav li {
 }
 
 #contact-btn:hover {
-    color: black;
-    background: white;
+  color: black;
+  background: white;
 }
 
 #learn-btn:hover {
-    color: black;
-    background: white;
+  color: black;
+  background: white;
 }
 
 .about {
@@ -183,14 +199,95 @@ nav li {
 }
 
 .about li .icon {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  border: 1px solid #ccc;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d1cfcf;
   border-radius: 50%;
-  text-align: center;
-  line-height: 30px;
+  background: white;
   margin-right: 10px;
-  font-size: 14px;
+}
+
+.about li .icon i {
+  font-size: 20px;
+  color: #8e7754;
+}
+
+
+@media (max-width: 1024px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .page-intro h1 {
+    font-size: 36px;
+  }
+
+  .page-intro h4 {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .about {
+    padding: 60px 20px;
+  }
+
+  .buttons {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding-top: 20px;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav li {
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+}
+
+@media (max-width: 600px) {
+  .page-intro h1 {
+    font-size: 28px;
+  }
+
+  .page-intro h4 {
+    font-size: 16px;
+  }
+
+  .buttons {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
 }
