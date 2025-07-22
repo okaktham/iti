@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    font-weight: bold;
+    background: #111;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+input {
+    padding: 0.8em 1em;
+    font-size: 1.2rem;
+    width: 90vw;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+.output {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-wrap: wrap;
+    align-items: center;
+    font-size: 1.1rem;
+}
+@media (min-width: 600px) {
+    .output {
+        flex-direction: row;
+    }
+}
