@@ -2,17 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decimal Converter</title>
-  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  </style>
 </head>
 <body>
+<body>
   <h1>Decimal Converter</h1>
-  <input type="number" id="decimalInput" placeholder="Enter decimal..." />
-  <div class="output">
-    <div>Binary: <span id="binaryOut">-</span></div>
-    <div>Hex: <span id="hexOut">-</span></div>
+  <div class="container">
+    <input type="number" id="decimalInput" placeholder="Enter decimal number..." />
+    <div class="output">
+      <div class="output-item">
+        <div class="output-label">Binary</div>
+        <div class="output-value" id="binaryOut">-</div>
+      </div>
+      <div class="output-item">
+        <div class="output-label">Hexadecimal</div>
+        <div class="output-value" id="hexOut">-</div>
+      </div>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>
 </html>
-

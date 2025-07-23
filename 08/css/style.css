@@ -1,50 +1,95 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: monospace;
-    font-weight: bold;
-    background: #111;
-    color: #eee;
+    font-family: 'Arial', sans-serif;
+    background: #1a1a1a;
+    color: #fff;
     margin: 0;
-    padding: 0;
-    height: 100vh;
+    padding: 20px;
+    min-height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
 }
+
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin: 0;
+    color: #4CAF50;
 }
+
+.container {
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+
 input {
-    padding: 0.8em 1em;
+    padding: 15px;
     font-size: 1.2rem;
-    width: 90vw;
-    border-radius: 5px;
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #444;
+    background: #333;
+    color: #fff;
     text-align: center;
-    border: none;
-    border-radius: 5px;
+    margin-bottom: 20px;
 }
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+input::placeholder {
+    color: #888;
+}
+
 .output {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    text-wrap: wrap;
-    align-items: center;
-    font-size: 1.1rem;
+    gap: 15px;
 }
-@media (min-width: 600px) {
-    .output {
-        flex-direction: row;
+
+.output-item {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+}
+
+.output-label {
+    font-size: 0.9rem;
+    color: #4CAF50;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.output-value {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    color: #fff;
+    word-break: break-all;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .container {
+        padding: 20px;
     }
 }
