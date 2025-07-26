@@ -63,6 +63,7 @@ body.dark-mode {
     overflow: hidden;
     margin-bottom: 20px;
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 .dark-mode .recipe-card {
