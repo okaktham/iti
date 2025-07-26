@@ -89,7 +89,7 @@ function loadDarkModePreference() {
 
     if (darkMode === 'enabled') {
         document.body.classList.add('dark-mode');
-        toggleBtn.innerHTML = '☀️ Light Mode';
+        toggleBtn.innerHTML = '☀️';
     }
 }
 
