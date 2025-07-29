@@ -1,0 +1,39 @@
+.not-found-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.not-found-container h1 {
+  font-size: 8rem;
+  margin: 0;
+  color: #646cff;
+}
+
+.not-found-container h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.not-found-container p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.home-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.25s;
+}
+
+.home-link:hover {
+  background-color: #535bf2;
+}

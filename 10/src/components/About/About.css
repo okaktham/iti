@@ -1,0 +1,58 @@
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.example-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.example-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.example-card input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.button-group span {
+  font-size: 1.5em;
+  font-weight: bold;
+  min-width: 2rem;
+}
+
+.example-card ul {
+  text-align: left;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.example-card p {
+  color: #666;
+  font-size: 0.9em;
+}
