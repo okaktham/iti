@@ -1,0 +1,69 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.product-manager {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.total-display {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #e3f2fd;
+  border-radius: 8px;
+}
+
+.no-products {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #fff3cd;
+  border-radius: 8px;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.quantity-display {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.delete-button {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.product-price {
+  color: #666;
+  font-size: 1.1em;
+  margin: 0.5rem 0;
+}
